@@ -23,29 +23,38 @@
 
             <div class="header__top">
                 <div class="logo">
-                    <a href="index.html"><img src="/src/img/logo-mobile-new.png" alt="Logo firmy"></a>
+                    <a href="index.html"><img src="../../src/img/logo-mobile-new.png" alt="Logo firmy"></a>
                 </div>
 
-                <nav class="nav">
-                    <div class="nav__hamburger">
+                <div class="header__top-hamburger">
+                    <div class="hamburger">
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
+                </div>
 
-                    <div class="nav__desktop"></div>
-                    <div class="nav__mobile">
-                        <div class="nav-items">
-                            <a href="#">O nas</a>
-                            <a href="#">Produkty</a>
-                            <a href="#">Kontakt</a>
-                        </div>
-                    </div>
-                </nav>
             </div>
-
+            
+            <nav class="nav">
+                <div class="nav__desktop"></div>
+                <div class="nav__mobile">
+                    <ul class="nav-items">
+                        <li class="nav-item">
+                            <a href="#">O nas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Produkty</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
             <div class="header__img">
-                <h1 class="header-title">Meble do Twojego domu tworzone z pasją</h1>
+                <h1 class="header-title">Meble do Twojego domu tworzone <br>z pasją</h1>
             </div>
         </header>
 
@@ -61,6 +70,8 @@
         </section>
     </main>
 
+
+    <script src="../../src/js/script.js"></script>
 </body>
 
 </html>
