@@ -108,7 +108,7 @@ h2.section-title {
 
 		.nav {
 			position: relative;
-
+			
 			&__mobile {
 				display: none;
 				position: absolute;
@@ -118,13 +118,13 @@ h2.section-title {
 				height: 90vh;
 				background-color: $main;
 				z-index: 2;
-
+				
 				.nav-items {
 					width: 100%;
 					display: flex;
 					flex-direction: column;
 					list-style: none;
-
+					
 					.nav-item {
 						display: flex;
 						justify-content: space-between;
@@ -168,6 +168,88 @@ h2.section-title {
 			font-weight: 300;
 			text-align: center;
 			line-height: 1.6em;
+		}
+	}
+
+	.projects {
+		position: relative;
+
+		&__images {
+			// position: relative;
+
+			picture {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			img {
+				width: 90%;
+				margin: 0 1em;
+			}
+		}
+
+		// &__btns {
+		// 	display: block;
+
+		// 	&-prev, &-next {
+		// 		display: flex;
+		// 		justify-content: center;
+		// 		align-items: center;
+		// 		position: absolute;
+		// 		top: 50%;
+		// 		transform: translateY(50%);
+		// 		width: 30px;
+		// 		height: 30px;
+		// 		border: 1px solid $main;
+		// 		border-radius: 50%;
+		// 		// background-color: $btns;
+
+		// 		i {
+		// 			color: $main;
+		// 			font-size: 1.5rem;
+		// 		}
+		// 	}
+
+		// 	&-prev {
+		// 		left: 10%;
+		// 	}
+
+		// 	&-next {
+		// 		right: 10%;
+		// 	}
+		// }
+	}
+
+	.benefits {
+		&__squares {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width: 100%;
+
+			.square {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				margin: 0.5em;
+				padding: 1em;
+				width: 150px;
+				height: 150px;
+				border: 1px solid $title;
+
+				i {
+					font-size: 5rem;
+					text-align: center;
+					color: $title;
+				}
+
+				p {
+					margin-top: 1em;
+					font-size: 1.6rem;
+					text-align: center;
+				}
+			}
 		}
 	}
 }
