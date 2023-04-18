@@ -15,13 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
 
     <link rel="stylesheet" href="./dist/css/style.min.css">
 </head>
 
 <body>
     <main id="page">
+        <!-- @include 'nav.kit' -->
         <header class="header">
 
             <div class="header__top">
@@ -39,32 +40,13 @@
 
             </div>
 
-            <nav class="nav">
-                <div class="nav__desktop"></div>
-                <div class="nav__mobile">
-                    <ul class="nav-items">
-                        <li class="nav-item">
-                            <a href="#">O nas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Oferta</a>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Realizacje</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#">Kontakt</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            
             <div class="header__img">
                 <h1 class="header-title">Meble do Twojego domu tworzone <br>z pasją</h1>
             </div>
         </header>
 
-        <section class="section about">
+        <section id="about" class="section about">
             <h2 class="section-title">Historia Meggi Meble</h2>
 
             <div class="wrapper">

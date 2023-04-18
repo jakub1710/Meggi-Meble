@@ -50,6 +50,52 @@ h2.section-title {
 #page {
 	overflow: hidden;
 
+	.nav {
+		position: relative;
+		
+		&__mobile {
+			display: none;
+			position: absolute;
+			top: 10vh;
+			left: 0;
+			width: 100%;
+			height: 90vh;
+			background-color: $main;
+			z-index: 2;			
+
+			.nav-items {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				list-style: none;
+
+				.nav-item {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					width: 100%;
+					border-top: 1px solid #dddcda;
+					padding: 1em 2em 1em 1em;
+					font-size: 1.6rem;
+					font-weight: 300;
+					overflow: hidden;
+					
+					
+					a {
+						color: black;
+						text-decoration: none;
+					}
+
+
+				}
+			}
+		}
+	}
+
+	.active {
+		display: flex;
+	}
+
 	.header {
 		height: 100vh;
 		width: 100%;
@@ -57,7 +103,7 @@ h2.section-title {
 		&__top {
 			position: relative;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			width: 100%;
 			height: 10vh;
 			padding: 0 1em;
@@ -66,11 +112,10 @@ h2.section-title {
 				position: relative;
 				display: flex;
 				padding: 0 1em;
-				width: 70%;
 				z-index: 2;
 
 				img {
-					height: 90%;
+					height: 100%;
 				}
 			}
 
@@ -78,8 +123,7 @@ h2.section-title {
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
-				padding: 0 1em;
-				width: 30%;
+				padding: 0 2em;
 				cursor: pointer;
 
 				.hamburger {
@@ -103,53 +147,23 @@ h2.section-title {
 						top: 100%;
 					}
 				}
+
+				// .hamburger.is-open span {
+				// 	transform: rotate(-45deg);
+				// 	transition: transform 0.3s;
+				// }
+				// .hamburger.is-open span:nth-child(2) {
+				// 	display: none;
+				// 	transition: transform 0.3s;
+				// }
+				// .hamburger.is-open span:nth-child(3) {
+				// 	transform: rotate(45deg);
+				// 	transition: transform 0.3s;
+				// }
 			}
 		}
 
-		.nav {
-			position: relative;
-			
-			&__mobile {
-				display: none;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 90vh;
-				background-color: $main;
-				z-index: 2;
-				
-				.nav-items {
-					width: 100%;
-					display: flex;
-					flex-direction: column;
-					list-style: none;
-					
-					.nav-item {
-						display: flex;
-						justify-content: space-between;
-						align-items: center;
-						width: 100%;
-						border-top: 1px solid #dddcda;
-						padding: 1em 2em 1em 1em;
-						font-size: 1.6rem;
-						font-weight: 300;
-						
-						a {
-							color: black;
-							text-decoration: none;
-						}
-
-
-					}
-				}
-			}
-		}
-
-		.active {
-			display: flex;
-		}
-
+		
 		&__img {
 			position: relative;
 			display: flex;
@@ -187,37 +201,6 @@ h2.section-title {
 				margin: 0 1em;
 			}
 		}
-
-		// &__btns {
-		// 	display: block;
-
-		// 	&-prev, &-next {
-		// 		display: flex;
-		// 		justify-content: center;
-		// 		align-items: center;
-		// 		position: absolute;
-		// 		top: 50%;
-		// 		transform: translateY(50%);
-		// 		width: 30px;
-		// 		height: 30px;
-		// 		border: 1px solid $main;
-		// 		border-radius: 50%;
-		// 		// background-color: $btns;
-
-		// 		i {
-		// 			color: $main;
-		// 			font-size: 1.5rem;
-		// 		}
-		// 	}
-
-		// 	&-prev {
-		// 		left: 10%;
-		// 	}
-
-		// 	&-next {
-		// 		right: 10%;
-		// 	}
-		// }
 	}
 
 	.benefits {
@@ -232,7 +215,7 @@ h2.section-title {
 				justify-content: center;
 				align-items: center;
 				flex-direction: column;
-				margin: 0.5em;
+				margin: 1em 0;
 				padding: 1em;
 				width: 150px;
 				height: 150px;
