@@ -14,11 +14,18 @@ const showMenu = () => {
 
 	allNavItems.forEach((item) => {
 		item.addEventListener('click', () => {
-			// navMobile.classList.remove('active');
-			hamburger.classList.remove('is-open');
+			if (e.target.classList.contains('opener')) {
+				navMobile.classList.add('active');
+			} else {
+				navMobile.classList.remove('active');
+				hamburger.classList.remove('is-open');
+			}
 		});
 	});
 };
+
+
+// }
 
 // FOOTER
 const handleCurrentYear = () => {
@@ -28,6 +35,4 @@ const handleCurrentYear = () => {
 handleCurrentYear();
 
 hamburger.addEventListener('click', showMenu);
-offerNav.addEventListener('click', () => {
-	subMenu.style.display = 'block';
-});
+// offerNav.addEventListener('click', subMenuHandler);
