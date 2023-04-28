@@ -5,6 +5,9 @@ const allNavItems = document.querySelectorAll('.nav-item');
 const offerNav = document.querySelector('#offer-nav');
 const subMenu = document.querySelector('.sub-menu');
 
+const picture = document.querySelector('.picture');
+const pictureBg = document.querySelector('.picture__bg');
+
 const footerYear = document.querySelector('.footer__year');
 
 // NAV
@@ -14,18 +17,15 @@ const showMenu = () => {
 
 	allNavItems.forEach((item) => {
 		item.addEventListener('click', () => {
-			if (e.target.classList.contains('opener')) {
-				navMobile.classList.add('active');
-			} else {
-				navMobile.classList.remove('active');
-				hamburger.classList.remove('is-open');
-			}
+			navMobile.classList.remove('active');
+			hamburger.classList.remove('is-open');
 		});
 	});
 };
 
-
-// }
+const showInfo = () => {
+	pictureBg.style.display = 'flex';
+};
 
 // FOOTER
 const handleCurrentYear = () => {
@@ -35,4 +35,4 @@ const handleCurrentYear = () => {
 handleCurrentYear();
 
 hamburger.addEventListener('click', showMenu);
-// offerNav.addEventListener('click', subMenuHandler);
+picture.addEventListener('click', showInfo);
