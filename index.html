@@ -14,64 +14,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
 
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
 <body>
-    <main id="page">
+    <header class="header">
+        <div class="header__top">
+
+            <div class="header__top-logo">
+                <a href="index.html"><img src="./dist/img/logo-mobile-new.png" alt="Logo firmy"></a>
+            </div>
+
+            <div class="header__top-hamburger">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
         <nav class="nav">
-    <div class="nav__desktop"></div>
-    <div class="nav__mobile">
-        <ul class="nav-items">
-            <li class="nav-item">
-                <a href="index.html#about">O nas</a>
-            </li>
-            <li id="offer-nav" class="nav-item opener">
-                <a href="#">Oferta</a>
-                <i class="fa-solid fa-chevron-down"></i>
-                <ul class="nav-items sub-menu">
-                    <li class="nav-item"><a href="narozniki.html">Narożniki</a></li>
-                    <li class="nav-item"><a href="sofy.html">Sofy</a></li>
-                    <li class="nav-item"><a href="fotele..html">Fotele</a></li>
-                    <li class="nav-item"><a href="krzesła.html">Krzesła</a></li>
-                    <li class="nav-item"><a href="wersalki.html">Wersalki</a></li>
-                    <li class="nav-item"><a href="tapczany.html">Tapczany</a></li>
-                    <li class="nav-item"><a href="sypialnie.html">Sypialnie</a></li>
-                    <li class="nav-item"><a href="elementy.html">Elementy tapicerowane</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a href="projects.html">Realizacje</a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html">Kontakt</a>
-            </li>
-        </ul>
-    </div>
+    <ul class="nav__mobile">
+        <li class="nav__mobile-item">
+            <a href="index.html#about">O nas</a>
+        </li>
+        <li id="offer-nav" class="nav__mobile-item">
+            <a href="#">Oferta</a>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="nav__sub">
+                <a class="nav__sub-item"><a href="narozniki.html">Narożniki</a>
+                    <a class="nav__sub-item"><a href="sofy.html">Sofy</a>
+                        <a class="nav__sub-item"><a href="fotele.html">Fotele</a>
+                            <a class="nav__sub-item"><a href="krzesła.html">Krzesła</a>
+                                <a class="nav__sub-item"><a href="wersalki.html">Wersalki</a>
+                                    <a class="nav__sub-item"><a href="tapczany.html">Tapczany</a>
+                                        <a class="nav__sub-item"><a href="sypialnie.html">Sypialnie</a>
+                                            <a class="nav__sub-item"><a href="elementy.html">Elementy
+                                                    tapicerowane</a>
+            </div>
+        </li>
+        <li class="nav__mobile-item">
+            <a href="projects.html">Realizacje</a>
+        </li>
+        <li class="nav__mobile-item">
+            <a href="contact.html">Kontakt</a>
+        </li>
+    </ul>
+
+    <ul class="nav__desktop">
+
+        <li class="nav__desktop-item">
+            <a href="index.html#about">O nas</a>
+        </li>
+        <li id="offer-nav" class="nav__desktop-item">
+            <a href="#">Oferta</a>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="nav__sub">
+                <a class="nav__sub-item"><a href="narozniki.html">Narożniki</a>
+                    <a class="nav__sub-item"><a href="sofy.html">Sofy</a>
+                        <a class="nav__sub-item"><a href="fotele.html">Fotele</a>
+                            <a class="nav__sub-item"><a href="krzesła.html">Krzesła</a>
+                                <a class="nav__sub-item"><a href="wersalki.html">Wersalki</a>
+                                    <a class="nav__sub-item"><a href="tapczany.html">Tapczany</a>
+                                        <a class="nav__sub-item"><a href="sypialnie.html">Sypialnie</a>
+                                            <a class="nav__sub-item"><a href="elementy.html">Elementy
+                                                    tapicerowane</a>
+            </div>
+        </li>
+        <li class="nav__desktop-item">
+            <a href="projects.html">Realizacje</a>
+        </li>
+        <li class="nav__desktop-item">
+            <a href="contact.html">Kontakt</a>
+        </li>
+    </ul>
 </nav>
-        <header class="header">
+    </header>
+    <main id="page">
 
-            <div class="header__top">
-                <div class="logo">
-                    <a href="index.html"><img src="./dist/img/logo-mobile-new.png" alt="Logo firmy"></a>
-                </div>
-
-                <div class="header__top-hamburger">
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="header__img">
-                <h1 class="header-title">Meble do Twojego domu tworzone <br>z pasją</h1>
-            </div>
-        </header>
+        <div class="img">
+            <h1 class="header-title">Meble do Twojego domu tworzone <br>z pasją</h1>
+        </div>
 
         <section id="about" class="section about">
             <h2 class="section-title">Historia Meggi Meble</h2>
@@ -85,11 +111,14 @@
         </section>
         <section class=" section projects">
             <h2 class="section-title">Nasze realizacje</h2>
-            <div class="projects__images center">
-                <img src="./dist/img/IMG_1528-650px.jpg" alt="Zielony narożnik">
-                <img src="./dist/img/IMG_2259.jpg" alt="Szare łóżko">
-                <img src="./dist/img/IMG_2411.jpg" alt="Żółta sofa">
-                <img src="./dist/img/P1060841.jpg" alt="Łóżko dziecięce">
+
+            <div class="wrapper">
+                <div class="projects__images center">
+                    <img src="./dist/img/IMG_1528-650px.jpg" alt="Zielony narożnik">
+                    <img src="./dist/img/IMG_2259.jpg" alt="Szare łóżko">
+                    <img src="./dist/img/IMG_2411.jpg" alt="Żółta sofa">
+                    <img src="./dist/img/P1060841.jpg" alt="Łóżko dziecięce">
+                </div>
             </div>
         </section>
 
@@ -121,14 +150,71 @@
 
         <footer id="contact" class="contact">
     <div class="wrapper">
-        
+
         <h3 class="contact-title">Kontakt</h3>
-        <ul class="contact__list">
+
+        <div class="contact__container">
+
+            <div class="contact__header">
+                <div class="contact__header-title">
+                    <h4 class="contact-list-title">Adres Meggi</h4>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <div class="content active-header">
+                    <p class="contact-list-address">
+                        Bugaj 132,<br>
+                        34-130 Kalwaria Zebrzydowska<br>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="contact__header">
+                <div class="contact__header-title">
+                    <h4 class="contact-list-title">Kontakt</h4>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <div class="content">
+                    <ul class="contact__header-list">
+                        <li><i class="fa-solid fa-phone"></i> 888-445-198</li>
+                        <li><i class="fa-solid fa-envelope"></i> meggi.meble@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="contact__header">
+                <div class="contact__header-title">
+                    <h4 class="contact-list-title">Lokalizacje</h4>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <div class="content">
+                    <ul class="contact__header-list">
+                        <li>Bugaj - Kontakt telefoniczny</li>
+                        <li>Tychy - Sobota (7-12)</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="contact__header">
+                <div class="contact__header-title">
+                    <h4 class="contact-list-title">Social Media</h4>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+                <div class="content">
+                    <p class="contact-list-address">
+                        <i class="fa-brands fa-square-facebook"><a href="https://www.facebook.com/people/MEGGI-MEBLE/100054253070183/"></a></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <ul class="contact__list">
             <li class="contact__list-item "><i class="fa-solid fa-location-dot"></i> 34-130 Kalwaria Zebrzydowska,<br>Bugaj 132</li>
             <li class="contact__list-item"><i class="fa-solid fa-phone"></i> 888-445-198</li>
             <li class="contact__list-item"><i class="fa-solid fa-envelope"></i> meggi.meble@gmail.com</li>
             <li class="contact__list-item"><i class="fa-brands fa-facebook"></i> facebook.pl</li>
-        </ul>
+        </ul> -->
 
         <p class="contact__info"><a href="contact.html">Zobacz</a> gdzie nas znaleźć</p>
     </div>

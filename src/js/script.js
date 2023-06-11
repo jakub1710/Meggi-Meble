@@ -1,14 +1,17 @@
 const hamburger = document.querySelector('.hamburger');
 const navMobile = document.querySelector('.nav__mobile');
-const allNavItems = document.querySelectorAll('.nav-item');
+const allNavItems = document.querySelectorAll('.nav__mobile-item');
 
 const offerNav = document.querySelector('#offer-nav');
-const subMenu = document.querySelector('.sub-menu');
+const subMenu = document.querySelector('.nav__sub');
 
-const picture = document.querySelector('.picture');
+const pictures = document.querySelector('.picture');
 const pictureBg = document.querySelector('.picture__bg');
 
 const footerYear = document.querySelector('.footer__year');
+
+const contactHeader = document.querySelectorAll('.contact__header')
+const contactContent = document.querySelector('.content')
 
 // NAV
 const showMenu = () => {
@@ -17,15 +20,26 @@ const showMenu = () => {
 
 	allNavItems.forEach((item) => {
 		item.addEventListener('click', () => {
-			navMobile.classList.remove('active');
+			// navMobile.classList.remove('active');
 			hamburger.classList.remove('is-open');
 		});
 	});
 };
 
-const showInfo = () => {
-	pictureBg.style.display = 'flex';
-};
+// SUB MENU
+const showSubMenu = () => {
+	subMenu.classList.toggle('active')
+}
+
+// CONTACT 
+// const infoContact = () => {
+// 	contactHeader.forEach(item) => {
+// 		item.addEventListener('click', () => {
+// 			contactContent.classList.add('active-header')
+// 		} )
+// 	}
+// }
+
 
 // FOOTER
 const handleCurrentYear = () => {
@@ -35,4 +49,5 @@ const handleCurrentYear = () => {
 handleCurrentYear();
 
 hamburger.addEventListener('click', showMenu);
-picture.addEventListener('click', showInfo);
+offerNav.addEventListener('click', showSubMenu)
+// contactHeader.addEventListener('click', infoContact)

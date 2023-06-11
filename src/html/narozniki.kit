@@ -21,11 +21,10 @@
 </head>
 
 <body>
-    <main id="page">
-        <!-- @include 'nav.kit' -->
-
+    <header class="header">
         <div class="header__top">
-            <div class="logo">
+
+            <div class="header__top-logo">
                 <a href="index.html"><img src="./dist/img/logo-mobile-new.png" alt="Logo firmy"></a>
             </div>
 
@@ -36,26 +35,17 @@
                     <span></span>
                 </div>
             </div>
+
         </div>
+        <!-- @include 'nav.kit' -->
+    </header>
+    <main id="page">
+        
+        <div class="wrapper">
+            <h2 class="section-title">Narożniki</h2>
 
-        <h2 class="section-title">Narożniki</h2>
-
-        <div class="pictures">
-            <div class="picture">
-                <div class="picture__img">
-                    <img src="./src/img/IMG_2411.jpg" alt="">
-                </div>
-                <div class="picture__bg">
-                    <h4 class="furniture-title">Verona</h4>
-                </div>
-            </div>
-            <div class="picture">
-                <div class="picture__img">
-                    <img src="./src/img/P1060841.jpg" alt="">
-                </div>
-                <div class="picture__bg">
-                    <h4 class="furniture-title">Praga</h4>
-                </div>
+            <div class="pictures">
+                <!-- @include 'subpage-template.kit' -->
             </div>
         </div>
 

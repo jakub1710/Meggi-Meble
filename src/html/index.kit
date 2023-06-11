@@ -14,35 +14,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
 
     <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 
 <body>
-    <main id="page">
+    <header class="header">
+        <div class="header__top">
+
+            <div class="header__top-logo">
+                <a href="index.html"><img src="./dist/img/logo-mobile-new.png" alt="Logo firmy"></a>
+            </div>
+
+            <div class="header__top-hamburger">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
         <!-- @include 'nav.kit' -->
-        <header class="header">
+    </header>
+    <main id="page">
 
-            <div class="header__top">
-                <div class="logo">
-                    <a href="index.html"><img src="./dist/img/logo-mobile-new.png" alt="Logo firmy"></a>
-                </div>
-
-                <div class="header__top-hamburger">
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="header__img">
-                <h1 class="header-title">Meble do Twojego domu tworzone <br>z pasją</h1>
-            </div>
-        </header>
+        <div class="img">
+            <h1 class="header-title">Meble do Twojego domu tworzone <br>z pasją</h1>
+        </div>
 
         <section id="about" class="section about">
             <h2 class="section-title">Historia Meggi Meble</h2>
@@ -56,11 +56,14 @@
         </section>
         <section class=" section projects">
             <h2 class="section-title">Nasze realizacje</h2>
-            <div class="projects__images center">
-                <img src="./dist/img/IMG_1528-650px.jpg" alt="Zielony narożnik">
-                <img src="./dist/img/IMG_2259.jpg" alt="Szare łóżko">
-                <img src="./dist/img/IMG_2411.jpg" alt="Żółta sofa">
-                <img src="./dist/img/P1060841.jpg" alt="Łóżko dziecięce">
+
+            <div class="wrapper">
+                <div class="projects__images center">
+                    <img src="./dist/img/IMG_1528-650px.jpg" alt="Zielony narożnik">
+                    <img src="./dist/img/IMG_2259.jpg" alt="Szare łóżko">
+                    <img src="./dist/img/IMG_2411.jpg" alt="Żółta sofa">
+                    <img src="./dist/img/P1060841.jpg" alt="Łóżko dziecięce">
+                </div>
             </div>
         </section>
 
