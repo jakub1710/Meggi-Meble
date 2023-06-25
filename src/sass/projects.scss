@@ -233,3 +233,22 @@ h3.contact-title {
 @import './small';
 @import './medium';
 @import './large';
+
+@media (min-width: 992px) {
+	#page {
+		.projects {
+			position: relative;
+
+			&__images {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+
+				img {
+					width: 60%;
+					margin: 3em 1em;
+				}
+			}
+		}
+	}
+}

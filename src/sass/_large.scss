@@ -68,7 +68,7 @@
 				position: relative;
 				display: flex;
 				align-items: center;
-				justify-content: space-between;
+				justify-content: space-around;
 				height: 100%;
 				font-size: 2rem;
 				list-style: none;
@@ -81,7 +81,7 @@
 					margin: 0;
 					padding: 0.5em 0;
 					cursor: pointer;
-
+					
 					&:hover .nav__sub {
 						display: flex;
 						position: relative;
@@ -97,13 +97,17 @@
 						display: none;
 						flex-direction: column;
 						align-items: center;
-						background-color: #f3f3f2;
-						padding: 1em;
+						padding: 0;
+						margin: 0 0.5em;
 						
 						&-item {
-							// width: 100%;
-							padding: 0.5em 0;
-							font-size: 1.2rem;
+							width: 100%;
+							margin: 0.5em 0;
+							font-size: 1.6rem;
+
+							&:hover {
+								background-color: #d1d1d1;
+							}
 						}
 					}
 				}
@@ -127,7 +131,7 @@
 
 		.about {
 			&__text {
-				font-size: 2.2rem;
+				font-size: 1.8rem;
 				text-align: center;
 			}
 		}
@@ -137,8 +141,7 @@
 
 			&__images {
 				img {
-					// height: 70%;
-					margin: 0 1em;
+					margin: 2em 1em;
 				}
 			}
 		}
