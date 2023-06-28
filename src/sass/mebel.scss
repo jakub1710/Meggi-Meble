@@ -64,20 +64,19 @@ h4.contact-list-title {
 .header {
 	position: relative;
 	height: 10vh;
-	width: 100vw;
 
 	&__top {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		height: 100%;
-		width: 100%;
+		width: 100vw;
 		padding: 0 1em;
 		z-index: 100;
 
 		&-logo {
 			position: relative;
-			width: 50vw;
+			width: 50%;
 			padding: 0 1em;
 			z-index: 2;
 
@@ -354,6 +353,94 @@ h4.contact-list-title {
 	}
 }
 @media (min-width: 992px) {
+	.header {
+		height: 10vh;
+		display: flex;
+		justify-content: space-between;
+
+		&__top {
+			display: flex;
+			position: relative;
+			height: 100%;
+			width: 30%;
+			padding: 0 1em;
+			z-index: 2;
+
+			&-logo {
+				position: relative;
+				padding: 0 1em;
+				// width: 20%;
+				z-index: 2;
+
+				img {
+					height: 100%;
+				}
+			}
+
+			&-hamburger {
+				display: none;
+			}
+		}
+		
+		.nav {
+			position: relative;
+			width: 60%;
+
+			&__mobile {
+				display: none;
+			}
+
+			&__desktop {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				height: 100%;
+				font-size: 2rem;
+				list-style: none;
+
+				&-item {
+					text-align: center;
+					display: block;
+					height: 100%;
+					width: 25%;
+					margin: 0;
+					padding: 0.5em 0;
+					cursor: pointer;
+					
+					&:hover .nav__sub {
+						display: flex;
+						position: relative;
+						top: 0.9em;
+					}
+
+					a {
+						text-decoration: none;
+						color: black;
+					}
+
+					.nav__sub {
+						display: none;
+						flex-direction: column;
+						align-items: center;
+						padding: 0;
+						margin: 0 0.5em;
+						
+						&-item {
+							width: 100%;
+							margin: 0.5em 0;
+							font-size: 1.6rem;
+
+							&:hover {
+								background-color: #d1d1d1;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 	#page {
 		.container-furniture {
 			display: flex;
