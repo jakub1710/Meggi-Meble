@@ -49,7 +49,7 @@
                 <a class="nav__sub-item"><a href="narozniki.html">Narożniki</a>
                     <a class="nav__sub-item"><a href="sofy.html">Sofy</a>
                         <a class="nav__sub-item"><a href="fotele.html">Fotele</a>
-                            <a class="nav__sub-item"><a href="krzesła.html">Krzesła</a>
+                            <a class="nav__sub-item"><a href="krzesla.html">Krzesła</a>
                                 <a class="nav__sub-item"><a href="wersalki.html">Wersalki</a>
                                     <a class="nav__sub-item"><a href="tapczany.html">Tapczany</a>
                                         <a class="nav__sub-item"><a href="sypialnie.html">Sypialnie</a>
@@ -65,7 +65,7 @@
         </li>
     </ul>
 
-    <ul class="nav__desktop">
+    <ul id="nav__desktop" class="nav__desktop">
 
         <li class="nav__desktop-item">
             <a href="index.html#about">O nas</a>
@@ -74,15 +74,15 @@
             <a href="#">Oferta</a>
             <i class="fa-solid fa-chevron-down"></i>
             <div class="nav__sub">
-                <a class="nav__sub-item"><a href="narozniki.html">Narożniki</a>
-                    <a class="nav__sub-item"><a href="sofy.html">Sofy</a>
-                        <a class="nav__sub-item"><a href="fotele.html">Fotele</a>
-                            <a class="nav__sub-item"><a href="krzesła.html">Krzesła</a>
-                                <a class="nav__sub-item"><a href="wersalki.html">Wersalki</a>
-                                    <a class="nav__sub-item"><a href="tapczany.html">Tapczany</a>
-                                        <a class="nav__sub-item"><a href="sypialnie.html">Sypialnie</a>
-                                            <a class="nav__sub-item"><a href="elementy.html">Elementy
-                                                    tapicerowane</a>
+                <a class='nav__sub-item' href="narozniki.html">Narożniki</a>
+                <a class="nav__sub-item" href="sofy.html">Sofy</a>
+                <a class="nav__sub-item" href="fotele.html">Fotele</a>
+                <a class="nav__sub-item" href="krzesla.html">Krzesła</a>
+                <a class="nav__sub-item" href="wersalki.html">Wersalki</a>
+                <a class="nav__sub-item" href="tapczany.html">Tapczany</a>
+                <a class="nav__sub-item" href="sypialnie.html">Sypialnie</a>
+                <a class="nav__sub-item" href="elementy.html">Elementy
+                    tapicerowane</a>
             </div>
         </li>
         <li class="nav__desktop-item">
@@ -95,19 +95,22 @@
 </nav>
     </header>
     <main id="page">
-        
-        <div class="wrapper">
+    
+        <div id="wrapper-furniture" class="wrapper">
             <h2 class="section-title">Narożniki</h2>
 
-            <div class="pictures">
-                <div class="picture">
-    <div class="pictures__bg">
-        <h4 class="furniture-title"></h4>
-    </div>
-    <a href="../../mebel/sofa-verona.html"> 
-        <img src="./src/img/IMG_2259.jpg" alt="">
-    </a>
-</div>
+            <div class="furnitures">
+
+                <a href="./mebel/Narożnik Diana/naroznik-diana.html">
+                    <div class="furnitures__item">
+                        <div class="furnitures__item-photo">
+                            <img src="./mebel/Narożnik Diana/img/PhotoRoom_000_20230530_121836.jpg" alt="Narożnik">
+                        </div>
+                        <div class="furnitures__item-info">
+                            <h4 class="furniture-title">Narożnik Diana</h4>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -121,7 +124,7 @@
             <div class="contact__header">
                 <div class="contact__header-title">
                     <h4 class="contact-list-title">Adres Meggi</h4>
-                    <i class="fa-solid fa-sort-down"></i>
+                    <!-- <i class="fa-solid fa-sort-down"></i> -->
                 </div>
                 <div class="content active-header">
                     <p class="contact-list-address">
@@ -135,7 +138,7 @@
             <div class="contact__header">
                 <div class="contact__header-title">
                     <h4 class="contact-list-title">Kontakt</h4>
-                    <i class="fa-solid fa-sort-down"></i>
+                    <!-- <i class="fa-solid fa-sort-down"></i> -->
                 </div>
                 <div class="content">
                     <ul class="contact__header-list">
@@ -149,7 +152,7 @@
             <div class="contact__header">
                 <div class="contact__header-title">
                     <h4 class="contact-list-title">Lokalizacje</h4>
-                    <i class="fa-solid fa-sort-down"></i>
+                    <!-- <i class="fa-solid fa-sort-down"></i> -->
                 </div>
                 <div class="content">
                     <ul class="contact__header-list">
@@ -163,22 +166,15 @@
             <div class="contact__header">
                 <div class="contact__header-title">
                     <h4 class="contact-list-title">Social Media</h4>
-                    <i class="fa-solid fa-sort-down"></i>
+                    <!-- <i class="fa-solid fa-sort-down"></i> -->
                 </div>
                 <div class="content">
                     <p class="contact-list-address">
-                        <i class="fa-brands fa-square-facebook"><a href="https://www.facebook.com/people/MEGGI-MEBLE/100054253070183/"></a></i>
+                        <a href="https://www.facebook.com/people/MEGGI-MEBLE/100054253070183/"><i class="fa-brands fa-square-facebook"></i></a>
                     </p>
                 </div>
             </div>
         </div>
-        <!-- <ul class="contact__list">
-            <li class="contact__list-item "><i class="fa-solid fa-location-dot"></i> 34-130 Kalwaria Zebrzydowska,<br>Bugaj 132</li>
-            <li class="contact__list-item"><i class="fa-solid fa-phone"></i> 888-445-198</li>
-            <li class="contact__list-item"><i class="fa-solid fa-envelope"></i> meggi.meble@gmail.com</li>
-            <li class="contact__list-item"><i class="fa-brands fa-facebook"></i> facebook.pl</li>
-        </ul> -->
-
         <p class="contact__info"><a href="contact.html">Zobacz</a> gdzie nas znaleźć</p>
     </div>
     <div class="footer">
