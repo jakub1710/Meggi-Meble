@@ -154,7 +154,7 @@ h4.contact-list-title {
 }
 
 #page {
-	.pictures {
+	.furnitures {
 		display: flex;
 		justify-content: center;
 		padding: 2em;
@@ -163,13 +163,13 @@ h4.contact-list-title {
 			text-decoration: none;
 		}
 		
-		.pictures__item {
+		.furnitures__item {
 			position: relative;
 			display: flex;
 			flex-direction: column;
 			width: 90vw;
 			
-			.picture {
+			.furnitures__item-photo {
 				width: 100%;
 				height: 200px;
 
@@ -181,7 +181,7 @@ h4.contact-list-title {
 			}
 		}
 
-		.pictures__item-info {
+		.furnitures__item-info {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -279,9 +279,9 @@ h4.contact-list-title {
 
 @media (min-width: 475px) {
 	#page {
-		.pictures {			
-			.pictures__item {				
-				.picture {
+		.furnitures {			
+			.furnitures__item {				
+				.furniture__item-photo {
 					height: 300px;
 				}
 			}
@@ -291,14 +291,14 @@ h4.contact-list-title {
 
 @media (min-width: 992px) {
 	#page {
-		.pictures {
-			.pictures__item {
+		.furnitures {
+			.furnitures__item {
 				flex-direction: row;
 				margin-bottom: 3em;
 				width: 80vw;
 				height: 100%;
 
-				.picture {
+				.furnitures__item-photo {
 					width: 80%;
 
 					img {
@@ -309,7 +309,7 @@ h4.contact-list-title {
 						filter: brightness(60%);
 					}
 				}
-				.pictures__item-info {
+				.furnitures__item-info {
 					width: 25%;
 					height: 350px;
 				}
