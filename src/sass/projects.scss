@@ -42,6 +42,12 @@ h3.contact-title {
 	text-align: center;
 }
 
+h4.contact-list-title {
+	margin-bottom: 0.5em;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
 .header {
 	position: relative;
 	height: 10vh;
@@ -173,7 +179,7 @@ h3.contact-title {
 				}
 
 				.content {
-					display: none;
+					display: flex;
 					line-height: 25px;
 
 					p.contact-list-address {
@@ -195,11 +201,6 @@ h3.contact-title {
 							font-size: 2rem;
 						}
 					}
-				}
-
-				.active-header {
-					display: flex;
-					flex-direction: column;
 				}
 			}
 		}

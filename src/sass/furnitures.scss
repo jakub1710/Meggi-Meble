@@ -217,7 +217,7 @@ h4.contact-list-title {
 			}
 
 			.content {
-				display: none;
+				display: flex;
 				line-height: 25px;
 
 				p.contact-list-address {
@@ -239,11 +239,6 @@ h4.contact-list-title {
 						font-size: 2rem;
 					}
 				}
-			}
-
-			.active-header {
-				display: flex;
-				flex-direction: column;
 			}
 		}
 	}

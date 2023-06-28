@@ -5,15 +5,7 @@ const allNavItems = document.querySelectorAll('.nav__mobile-item');
 const offerNav = document.querySelector('#offer-nav');
 const subMenu = document.querySelector('.nav__sub');
 
-const pictures = document.querySelector('.picture');
-const pictureBg = document.querySelector('.picture__bg');
-
-let bannerImage = document.querySelector('#bannerImage');
-
 const footerYear = document.querySelector('.footer__year');
-
-const contactHeader = document.querySelectorAll('.contact__header');
-const contactContent = document.querySelector('.content');
 
 // NAV
 const showMenu = () => {
@@ -24,6 +16,7 @@ const showMenu = () => {
 		item.addEventListener('click', () => {
 			navMobile.classList.remove('active');
 			hamburger.classList.remove('is-open');
+
 		});
 	});
 };
@@ -31,6 +24,7 @@ const showMenu = () => {
 // SUB MENU
 const showSubMenu = () => {
 	subMenu.classList.toggle('active');
+
 };
 
 // async function postData(url = '', data = {}) {
@@ -123,4 +117,4 @@ const handleCurrentYear = () => {
 handleCurrentYear();
 
 hamburger.addEventListener('click', showMenu);
-//offerNav.addEventListener('click', showSubMenu)
+offerNav.addEventListener('click', showSubMenu)

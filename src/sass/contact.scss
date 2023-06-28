@@ -31,6 +31,13 @@ h3.contact-title {
 	font-weight: 500;
 	text-align: center;
 }
+
+h4.contact-list-title {
+	margin-bottom: 0.5em;
+	font-size: 1.8rem;
+	font-weight: 300;
+}
+
 .section {
 	padding: 0 1em;
 	margin: 3em 0;
@@ -155,7 +162,7 @@ h3.contact-title {
 				}
 
 				.content {
-					display: none;
+					display: flex;
 					line-height: 25px;
 
 					p.contact-list-address {
@@ -211,25 +218,24 @@ h3.contact-title {
 		}
 	}
 
-    .maps {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
+	.maps {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
 
-        &__map {
-            margin-bottom: 3em;
-            border: 1px solid black;
-            overflow: hidden;
-
-        }
-        p.map {
-            margin-bottom: 0.5em;
-            font-size: 1.6rem;
-            text-align: center;
-        }
-    }
+		&__map {
+			margin-bottom: 3em;
+			border: 1px solid black;
+			overflow: hidden;
+		}
+		p.map {
+			margin-bottom: 0.5em;
+			font-size: 1.6rem;
+			text-align: center;
+		}
+	}
 }
 
 @import './small';
